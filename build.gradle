@@ -1,0 +1,44 @@
+buildscript {
+    ext.versions = [
+        'kotlin': '1.2.60',
+        'junit': '4.12',
+    ]
+
+    ext.deps = [
+        'kotlin': [
+            'gradlePlugin': "org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.60",
+            'stdLib': [
+                'common': "org.jetbrains.kotlin:kotlin-stdlib-common",
+                'jdk8': "org.jetbrains.kotlin:kotlin-stdlib-jdk8",
+                'jdk7': "org.jetbrains.kotlin:kotlin-stdlib-jdk7",
+                'jdk6': "org.jetbrains.kotlin:kotlin-stdlib",
+                'js': "org.jetbrains.kotlin:kotlin-stdlib-js",
+            ],
+            'test': [
+                'common': "org.jetbrains.kotlin:kotlin-test-common",
+                'annotations': "org.jetbrains.kotlin:kotlin-test-annotations-common",
+                'jdk': "org.jetbrains.kotlin:kotlin-test-junit",
+                'js': "org.jetbrains.kotlin:kotlin-test-js",
+            ],
+        ],
+        'test': [
+            'junit': "junit:junit:4.12",
+            'assertj': "org.assertj:assertj-core:1.7.0",
+        ]
+    ]
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.2.60"
+        classpath 'org.junit.platform:junit-platform-gradle-plugin:1.0.2'
+    }
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    repositories {
+        mavenCentral()
+    }
+}
