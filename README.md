@@ -2,6 +2,9 @@
 
 Code examples from my 2018 tech talk on maintainability
 
+ * [Video](https://www.youtube.com/watch?v=YZstpc2939s)
+ * [Slides](https://speakerdeck.com/swankjesse/writing-code-that-lasts-forever-droidcon-nyc-2018)
+
 ### Links
 
  * [Branch By Abstraction](https://martinfowler.com/bliki/BranchByAbstraction.html)
